@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">日记书</string>
+    <string name="search_bar">查找我原创的故事</string>
+    <string name="exception_request_failed">请求失败. 请稍后再试</string>
+    <string name="exception_network_anomaly">网络不可用, 请稍后再试</string>
+    <string name="error_offline_description">请检查网络连接</string>
+    <string name="error_offline">离线网络</string>
+    <string name="error_offline_action">重试</string>
+    <string name="error_request_failed">请求失败</string>
+    <string name="error_request_failed_description">服务器出现问题...</string>
+    <string name="error_request_failed_action">重试</string>
+    <string name="page_not_found">页面不存在</string>
+    <string name="exception_redirecting">跳转页面时发生异常...向我们反馈问题详情以助于解决问题</string>
+    <string name="publish">发布故事</string>
+    <string name="save">暂存</string>
+    <string name="titleDiscover">发现与订阅</string>
+    <string name="subTitleDiscover">不同人生, 不同故事</string>
+    <string name="loading">" 加载中..."</string>
+    <!--<string name="standard_date_pattern">MM月dd日, yyyy</string>-->
+</resources>

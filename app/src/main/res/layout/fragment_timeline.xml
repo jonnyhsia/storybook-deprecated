@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator"
+    tools:context=".page.main.timeline.TimelineFragment">
+
+    <com.jonnyhsia.storybook.ui.widget.StickyLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jonnyhsia.storybook.ui.widget.HighlightToolbar
+            android:id="@id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:highlightTitle="我的日记故事"
+            app:icon="@mipmap/img_avatar_default"
+            tools:highlightSubTitle="September 25, 2017"/>
+
+        <EditText
+            android:id="@+id/stickyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_search_bar"
+            android:cursorVisible="false"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/ic_search"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center_vertical"
+            android:hint="@string/search_bar"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.04"
+            android:longClickable="false"
+            android:minHeight="@dimen/searchBarHeight"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:textAllCaps="true"
+            android:textColorHint="@color/textDisable"
+            android:textSize="14sp"
+            android:transitionName="@string/transition_search_bar"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/scrollableView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            tools:listitem="@layout/item_timeline_story"/>
+
+    </com.jonnyhsia.storybook.ui.widget.StickyLayout>
+
+</android.support.design.widget.CoordinatorLayout>

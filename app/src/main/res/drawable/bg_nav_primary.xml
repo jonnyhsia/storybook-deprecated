@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="40dp"/>
+            <solid android:color="@color/navPressed"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="40dp"/>
+            <solid android:color="@color/primaryTint"/>
+            <!--<gradient android:angle="315"-->
+            <!--android:endColor="@color/fire_orange_s"-->
+            <!--android:startColor="@color/fire_orange_xs"/>-->
+        </shape>
+    </item>
+</selector>

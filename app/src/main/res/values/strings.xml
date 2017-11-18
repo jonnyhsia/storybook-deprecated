@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Storybook</string>
+
+    <string name="exception_request_failed">Request failed, please retry later.</string>
+    <string name="exception_network_anomaly">Network anomaly, please retry later.</string>
+    <string name="error_offline_description">No internet connection, please check\nyour network and retry…</string>
+    <string name="error_offline">Network Offline</string>
+    <string name="error_offline_action">Retry</string>
+    <string name="error_request_failed">Request Failed</string>
+    <string name="error_request_failed_description">Something on SERVER went wrong,\nPlease try again later…</string>
+    <string name="error_request_failed_action">Retry</string>
+    <string name="transition_search_bar" translatable="false">search_bar</string>
+    <string name="search_bar">Search your own stories</string>
+    <string name="page_not_found">Page Not Found</string>
+    <string name="exception_redirecting">An unexpected exception occurred when redirect the page.\nTell us the details to help fix this issue.</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="publish">Publish</string>
+    <string name="save">Save</string>
+    <string name="loading">Loading…</string>
+    <string name="subTitleDiscover">Different stories in life</string>
+    <string name="titleDiscover">Discover</string>
+</resources>

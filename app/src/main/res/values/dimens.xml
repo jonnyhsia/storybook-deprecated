@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_timeline">16dp</dimen>
+    <dimen name="touch_raise">8dp</dimen>
+    <dimen name="touch_raise_higher">12dp</dimen>
+    <dimen name="margin_timeline_story">10dp</dimen>
+    <dimen name="searchBarHeight">44dp</dimen>
+    <dimen name="pref_size">56dp</dimen>
+    <dimen name="banner_width">328dp</dimen>
+</resources>

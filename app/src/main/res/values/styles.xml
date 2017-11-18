@@ -1,0 +1,136 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/windowBg</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoTitle">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="AppTheme.NoTitle.Splash">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/splash</item>
+    </style>
+
+    <style name="AppTheme.NoTitle.FullVision">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoTitle.FullScreen">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    </style>
+
+    <style name="AppTheme.NoTitle.PageNotTitle">
+        <item name="android:statusBarColor">#5A5D7E</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <style name="Text">
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="Text.Nav">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Nav.Inactive">
+        <item name="android:textColor">@color/textDisable</item>
+    </style>
+
+    <style name="Text.Story">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Text.Story.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Text.Story.Content">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+    <style name="Text.Pref">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Text.Pref.Key">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Text.Pref.Value">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textCaption</item>
+        <item name="android:layout_gravity">center_vertical|end</item>
+        <item name="android:maxEms">6</item>
+    </style>
+
+    <style name="CustomCheckbox" parent="Theme.AppCompat">
+        <item name="android:buttonTint">@color/controlTint</item>
+    </style>
+
+    <style name="CustomSwitch">
+        <item name="colorControlActivated">@color/controlTint</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme.NoTitle">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Text.Button">
+        <item name="android:textColor">@drawable/selector_button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:minWidth">44dp</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Text.Button.Highlight">
+        <item name="android:textColor">@drawable/selector_button_text_highlight</item>
+    </style>
+
+    <style name="Banner">
+
+    </style>
+
+    <style name="Banner.Container">
+        <item name="android:elevation">12dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="topView" type="id"/>
+    <item name="stickyView" type="id"/>
+    <item name="scrollableView" type="id"/>
+</resources>

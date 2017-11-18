@@ -1,0 +1,107 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jonnyhsia.storybook.page.pagenotfound.PageNotFoundFragment">
+
+    <ImageView
+        android:id="@+id/imgPageNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/img_page_not_found"/>
+
+    <!-- 输入框 -->
+    <FrameLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/shape_search_bar_rounded"
+        android:elevation="6dp"
+        android:minHeight="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/inputFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="12dp"
+            android:background="@null"
+            android:focusable="true"
+            android:fontFamily="@font/noto_sans_medium"
+            android:hint="DETAILS OF PROBLEM"
+            android:includeFontPadding="false"
+            android:inputType="textCapSentences|textNoSuggestions"
+            android:letterSpacing="0.02"
+            android:scrollbars="vertical"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/imgSendFeedback"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end|center_vertical"
+            android:alpha="0.7"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="6dp"
+            android:src="@mipmap/ic_send"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvPageNotFoundDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:letterSpacing="0.02"
+        android:lineSpacingMultiplier="1.1"
+        android:shadowColor="@color/black20"
+        android:shadowDy="6"
+        android:shadowRadius="16"
+        android:text="@string/exception_redirecting"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/inputLayout"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayout"
+        app:layout_constraintStart_toStartOf="@+id/inputLayout"/>
+
+    <TextView
+        android:id="@+id/tvPageNotFound"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:shadowColor="@color/black26"
+        android:shadowDy="8"
+        android:shadowRadius="24"
+        android:text="@string/page_not_found"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPageNotFoundDescription"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayout"
+        app:layout_constraintStart_toStartOf="@+id/inputLayout"/>
+
+</android.support.constraint.ConstraintLayout>

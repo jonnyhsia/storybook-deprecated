@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/viewLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textAlignment="center"
+            android:textColor="@color/textCaption"
+            android:textSize="13sp"/>
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/grey_20_black"
+            android:progressTint="@color/grey_20_black"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.jonnyhsia.storybook.ui.widget.HighlightToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:highlightSubTitle="@string/subTitleDiscover"
+            app:highlightTitle="@string/titleDiscover"
+            app:icon="@mipmap/img_avatar_default"/>
+
+        <ViewStub
+            android:id="@+id/stubBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/view_discover_banner"/>
+
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/stubSubscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/view_subscription"
+        app:behavior_hideable="false"
+        app:layout_behavior="@string/bottom_sheet_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

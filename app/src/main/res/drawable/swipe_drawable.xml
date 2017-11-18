@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/pager_margin_bg"/>
+    </item>
+    <item android:right="12dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:endColor="@color/pager_margin_bg"
+                android:startColor="@color/pager_margin_shadow"/>
+        </shape>
+    </item>
+    <item android:left="12dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="180"
+                android:endColor="@color/pager_margin_bg"
+                android:startColor="@color/pager_margin_shadow"/>
+        </shape>
+    </item>
+</layer-list>

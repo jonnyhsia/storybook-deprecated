@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_clickable_rounded"
+    android:clickable="true"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:stateListAnimator="@animator/lift_on_touch">
+
+    <TextView
+        android:id="@+id/tvStoryTitle"
+        style="@style/Text.Story.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_timeline_story"
+        android:layout_marginStart="@dimen/margin_timeline_story"
+        android:layout_marginTop="4dp"
+        android:letterSpacing="0.02"
+        tools:text="0901  操场西北边能望到的丑陋建筑"/>
+
+    <com.jonnyhsia.storybook.ui.widget.NotoTextView
+        android:id="@+id/tvStoryContent"
+        style="@style/Text.Story.Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="@dimen/margin_timeline_story"
+        android:layout_marginStart="@dimen/margin_timeline_story"
+        android:layout_marginTop="8dp"
+        android:letterSpacing="0.02"
+        tools:text="西北边那幢建筑，好丑，可是就是喜欢一次又一次地看见。\n时间不早了，下次又是什么时候。\n这样的事物竟然也会被人暗自期待。"/>
+
+</LinearLayout>
